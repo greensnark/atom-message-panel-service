@@ -1,18 +1,39 @@
 {
   "name": "atom-message-panel-service",
-  "main": "./lib/atom-message-panel-service",
+  "main": "./lib/main",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "a message service provider for Atom",
   "keywords": [
+    "service",
+    "message",
+    "line message"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-message-panel-service:toggle"
-  },
-  "repository": "https://github.com/atom/atom-message-panel-service",
+  "repository": "https://github.com/tcarlsen/atom-message-panel-service",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {
+    "space-pen": "^5.1.1"
+  },
+  "providedServices": {
+    "message-panel-view": {
+      "description": "It all depends on this guy, this is your init function and you will need it",
+      "versions": {
+        "1.0.0": "provideMessagePanelView"
+      }
+    },
+    "plain-message-view": {
+      "description": "Lets you add a simple message",
+      "versions": {
+        "1.0.0": "providePlainMessageView"
+      }
+    },
+    "line-message-view": {
+      "description": "Lets you add messages for a specific line and character, and it will even navigate the user to that position with a single click",
+      "versions": {
+        "1.0.0": "provideLineMessageView"
+      }
+    }
   }
 }
