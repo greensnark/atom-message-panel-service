@@ -1,5 +1,9 @@
 # Atom Message Panel Service package
 
+> AMP is strong and rich API that gives package developers a easy way to display messages for the user in Atom!
+
+Discuss thread: https://discuss.atom.io/t/atom-message-panel-a-look-back/17034/5
+
 Original package: [atom-message-panel](https://github.com/tcarlsen/atom-message-panel)
 
 ## OBS!
