@@ -8,9 +8,9 @@ class MessagePanelView extends View
         @span outlet: 'heading', class: 'amp-title'
         @div outlet: 'summary', class: 'amp-summary'
         @div class: 'pull-right', =>
-          @i outlet: 'btnAutoScroll', class: 'icon-move-down', click: 'toggleAutoScroll'
-          @i outlet: 'btnFold', class: 'icon-fold', click: 'toggle'
-          @i outlet: 'btnClose', class: 'icon-x', click: 'close'
+          @button outlet: 'btnAutoScroll', class: 'amp-button icon-move-down', click: 'toggleAutoScroll'
+          @button outlet: 'btnFold', class: 'amp-button icon-fold', click: 'toggle'
+          @button outlet: 'btnClose', class: 'amp-button icon-x', click: 'close'
 
       @section outlet: 'body', class: 'amp-body'
 

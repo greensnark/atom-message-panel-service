@@ -5,9 +5,9 @@ module.exports =
 class LineMessageView extends View
   @content: ->
     @div class: 'amp-line-message', =>
-      @div outlet: 'position', click: 'goToLine'
-      @div outlet: 'contents'
-      @pre outlet: 'code', click: 'goToLine'
+      @div outlet: 'position', class: 'amp-line', click: 'goToLine'
+      @span outlet: 'contents', class: 'amp-message'
+      @pre outlet: 'code', class: 'amp-pre', click: 'goToLine'
 
   initialize: (params) ->
     @line = params.line;
